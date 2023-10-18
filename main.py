@@ -1,32 +1,30 @@
-import shutil
 from telethon import TelegramClient, events
 import os.path
 import configparser
 import openai
 import json
 from re import M
-import telebot, sys
+import telebot, sys, time
 from telebot import types
 import datetime
-import telebot,time
-# from telegram import InputMediaPhoto
-from random import randint
 import os
 from random import randint
-import configparser
 
 config = configparser.ConfigParser()
+config.read(c + "config.ini", encoding="UTF-8")
+
 s = os.path.abspath(__file__)
 c = s.replace(os.path.basename(os.path.abspath(__file__)), "")
-config.read(c + "config.ini", encoding="UTF-8")
 API_TOKEN = config["Params"]["token"]
 bot = telebot.TeleBot(API_TOKEN)
 openai.api_key = config["Params"]["key"]
+
 
 global dicti
 dicti = {"pfrase": config["Params"]["Pfrase"],
          "perepfrase": False,
          "counterPhoto": -1}
+
 
 def telegram_parser(send_message_func=None, loop=None):
     
@@ -58,7 +56,6 @@ def telegram_parser(send_message_func=None, loop=None):
             if event.photo:
                 dicti["counterPhoto"] += 1
                 await event.download_media(c+"Photos/"+str(dicti["counterPhoto"])+".png")
-            
             
             completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
