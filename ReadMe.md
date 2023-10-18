@@ -1,7 +1,7 @@
 ## TelegramParserBot
 ---
 An outline of the bot code that:
-1. takes posts from telegram channels
+1. Takes posts from telegram channels
 2. Paraphrases them through ChatGPT
 3. Posts to a separate channel
 
