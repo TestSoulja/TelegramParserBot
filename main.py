@@ -152,13 +152,3 @@ if __name__=='__main__':
 #         bot.send_message(call.from_user.id, text="Напиши фразу, которая будет стоять перед постом")
 #         dicti["perepfrase"] = True
 
-
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/main.py devastrator101@45.8.230.170:/home/devastrator101/reposter_bot
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/config.ini devastrator101@45.8.230.170:/home/devastrator101/reposter_bot
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/errors.json devastrator101@45.8.230.170:/home/devastrator101/reposter_bot
-
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/Test/main.py xippi-xard@195.133.44.175:/home/xippi-xard/reposter_bot
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/Test/config.ini xippi-xard@195.133.44.175:/home/xippi-xard/reposter_bot
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/Test/gazp.session xippi-xard@195.133.44.175:/home/xippi-xard/reposter_bot
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/Test/gazp.session-journal xippi-xard@195.133.44.175:/home/xippi-xard/reposter_bot
-# scp ~/VScode/Python/Fun/Parser_bot_Dima/Test/errors.json xippi-xard@195.133.44.175:/home/xippi-xard/reposter_bot
